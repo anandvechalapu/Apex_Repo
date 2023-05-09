@@ -1,0 +1,51 @@
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Student_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Student Name</label>
+        <length>100</length>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Student ID</label>
+        <length>20</length>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student_Grade__c</fullName>
+        <externalId>false</externalId>
+        <label>Student Grade</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <value>A</value>
+            <value>B</value>
+            <value>C</value>
+        </valueSet>
+    </fields>
+    <pageLayouts>
+        <fullName>Student_Record_Layout</fullName>
+    </pageLayouts>
+    <recordTypes>
+        <fullName>Student_Record_Type</fullName>
+    </recordTypes>
+    <validationRules>
+        <fullName>Validate_Student_Name</fullName>
+        <errorConditionFormula>AND(ISBLANK(Student_Name__c))</errorConditionFormula>
+        <errorMessage>Please enter a valid student name.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Student_ID</fullName>
+        <errorConditionFormula>AND(ISBLANK(Student_ID__c))</errorConditionFormula>
+        <errorMessage>Please enter a valid student ID.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_Student_Grade</fullName>
+        <errorConditionFormula>AND(ISBLANK(Student_Grade__c))</errorConditionFormula>
+        <errorMessage>Please select a valid student grade.</errorMessage>
+    </validationRules>
+</CustomObject>
