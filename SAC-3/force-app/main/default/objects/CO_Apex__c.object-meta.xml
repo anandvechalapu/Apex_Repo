@@ -5,15 +5,13 @@
         <externalId>false</externalId>
         <label>Name</label>
         <required>true</required>
-        <trackTrending>false</trackTrending>
         <type>Text</type>
     </fields>
     <fields>
-        <fullName>Student_ID__c</fullName>
+        <fullName>StudentID__c</fullName>
         <externalId>false</externalId>
         <label>Student ID</label>
         <required>true</required>
-        <trackTrending>false</trackTrending>
         <type>Text</type>
     </fields>
     <fields>
@@ -21,7 +19,6 @@
         <externalId>false</externalId>
         <label>Grade</label>
         <required>true</required>
-        <trackTrending>false</trackTrending>
         <type>Text</type>
     </fields>
 </CustomObject>
